@@ -28,7 +28,7 @@ a|
 * realtime
 * userland
 * python
-|
+| link:documenting/instcomp.asciidoc[Using instcomp to build instantiable components]
 |
 
 | Documenting
