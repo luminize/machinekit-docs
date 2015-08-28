@@ -2,16 +2,16 @@
 
 Recommended pre-reading from the legacy docs.
 
-link:src/intro.asciidoc[Introduction to HAL]
+link:../../src/hal/intro.asciidoc[Introduction to HAL]
 
-link:src/tutorial.asciidoc[Basic HAL turorial]
+link:../../src/hal/tutorial.asciidoc[Basic HAL turorial]
 
-Quite often there are existing components that can achieve your ends, without the need to write 
+Quite often there are existing components that can achieve your ends, without the need to write
 one yourself.
 
 Certainly, maths and logic components are very well catered for.
 
-link:src/components.asciidoc[This] is a brief resume of the existing 'stock' components
+link:../../src/hal/components.asciidoc[This] is a brief resume of the existing 'stock' components
 
 ==  C files
 
@@ -24,7 +24,7 @@ The components written directly in C are to be found mainly in
 
 [blue]#src/hal/components#
 
-There are device drivers in 
+There are device drivers in
 
 [blue]#src/hal/drivers#
 
@@ -40,7 +40,7 @@ shortcuts to enlightenment.
 
 === comp
 
-link:src/comp.asciidoc[comp] is the legacy (linuxcnc) component generator.
+link:../../src/hal/comp.asciidoc[comp] is the legacy (linuxcnc) component generator.
 
 comp will generate and compile components for rt or userspace.
 
@@ -57,11 +57,11 @@ The essential difference between normal realtime components and instantiable com
 is that 'normal components' are loaded once only and have to create as many copies of the
 component as they need, all at once, there and then.
 
-Instantiable components load the 'base component' and from that can create instances 
+Instantiable components load the 'base component' and from that can create instances
 of the component whenever they are required.
 So instances can be created in separate hal files, on-the-fly or whatever.
 
-Further info link:src/new-instantiated-components.asciidoc[here]
+Further info link:../../src/hal/new-instantiated-components.asciidoc[here]
 
 Amoungst many advantages, it opens up huge flexibility in configuration.
 
@@ -77,16 +77,14 @@ They can be found at [blue]#src/hal/i_components#
 
 It is possible to write userspace components in python, using the python bindings for the C libraries.
 
-It cannot be used for time sensitive or realtime components, because python is a scripted, interpreted 
+It cannot be used for time sensitive or realtime components, because python is a scripted, interpreted
 language, but a lot of components have no need of milli-second poll timing and can quite happily be
 written as userspace using python
 
-This link:src/halmodule.asciidoc[link] gives some basic information.
+This link:../../src/hal/halmodule.asciidoc[link] gives some basic information.
 
 There are not that many examples,  some in [blue]#src/hal/user_comps#
 
 but the best well known one, is part of every basic machine config
 
 [blue]#src/emc/usr_intf/axis/scripts/hal_manualtoolchange.py#
-
-
