@@ -8,6 +8,16 @@
 Installing Packages
 ===================
 
+As of now you have the choince running Machinekit on a Debian Wheezy (7) or an
+Debian Jessie (8) installation. Please take note of different instructions
+when they apply. These "notes" will be like this:
+
+[NOTE]
+====
+Please take note that you have to choose between "wheezy" and "jessie" here.
+====
+
+
 Follow these steps to configure Apt and install a kernel and Machinekit packages:
 
 [WARNING]
@@ -33,7 +43,15 @@ check back here before installing a new kernel.
 
 === [[configure-APT-i686-amd64-arm7]]Configure Apt for i686, amd64 and arm7 (Beaglebone)
 
-Copy and paste the following into a shell to configure the package archive:
+[NOTE]
+====
+Please choose between "wheezy" and "jessie" here.
+====
+
+Copy and paste the following into a shell to configure the package archive for:
+
+Dedian Wheezy
+
 [source,bash]
 ----
 sudo sh -c \
@@ -43,6 +61,19 @@ sudo sh -c \
   apt-get install dovetail-automata-keyring"
 sudo apt-get update
 ----
+
+Debian Jessie
+
+[source,bash]
+----
+sudo sh -c \
+  "echo 'deb http://deb.dovetail-automata.com jessie main' > \
+  /etc/apt/sources.list.d/machinekit.list; \
+  apt-get update ; \
+  apt-get install dovetail-automata-keyring"
+sudo apt-get update
+----
+
 continue with:
 [cols="1*"]
 |===
