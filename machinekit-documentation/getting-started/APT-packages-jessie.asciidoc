@@ -5,6 +5,15 @@
 |link:../documentation-matrix.asciidoc[Documentation matrix]
 |===
 
+
+==== Prerequisite:  
+Install git with
+[source, bash]
+----
+sudo apt-get install git
+----
+as otherwise the installation would not be complete and errorless.
+
 = [[configure-APT-i686-amd64-arm7-jessie]]Configure Apt for i686, amd64 and arm7 (Beaglebone) for `jessie`
 
 ==== Create APT `preferences` file and add `sid` repository
