@@ -1,42 +1,36 @@
-= Machinekit Main Index
-==============
-
-As with all linux projects always read the link:machinekit-documentation/README.asciidoc[README] file first
+# Welcome
+As with all linux projects always read the [README](README.md) file first.
 
 Before asking questions on the google group Machinekit list,
 please make sure you have read:
+- [Getting help](getting-help.md)
 
-- link:machinekit-documentation/getting-help.asciidoc[Getting help]
 
-== Navigating the documentation
 
-=== Machinekit specific documentation
-
+# Navigating the documentation
 There is a matrix so it's easier to find part of the documentation that
 is applicable to your project. This is at this moment very much a work
 in progress.
 
-- link:machinekit-documentation/documentation-matrix.asciidoc[Documentation matrix]
+- [Documentation matrix](machinekit-documentation/documentation-matrix.asciidoc)
 
 These documents are to be found in the */machinekit-documentation* directory
 and will give a starting point for the various topic areas.
 They link to legacy documentation and to new Machinekit documentation where it exists.
 
-- link:machinekit-documentation/index-getting-started.asciidoc[Getting started manual]
-- link:machinekit-documentation/index-user.asciidoc[User manual]
-- link:machinekit-documentation/index-HAL.asciidoc[HAL manual]
-- link:machinekit-documentation/index-integrator.asciidoc[Integrator manual]
-- link:machinekit-documentation/index-developer.asciidoc[Developer manual]
+- [Getting started manual](machinekit-documentation/index-getting-started.asciidoc)
+- [User manual](machinekit-documentation/index-user.asciidoc)
+- [HAL manual](machinekit-documentation/index-HAL.asciidoc)
+- [Integrator manual](machinekit-documentation/index-integrator.asciidoc)
+- [Developer manual](machinekit-documentation/index-developer.asciidoc)
 
-=== Legacy documentation
+### Legacy documentation
 A lot of the legacy Linuxcnc documentation is still valid, just mentally substitute Machinekit for Linuxcnc.
-
-This is to be found in the */src* directory of this repo
-
+This is to be found in the `src` directory of this repo
 Where appriate, links are made to it from Machinekit specific documents
 
-=== Documenting
+### Documenting
 the Documenting manual is new and is at this time a working document about
 the way the Machinekit project documenting is done.
 
-- link:machinekit-documentation/documenting/documenting.asciidoc[Documenting manual]
+- [Documenting manual](machinekit-documentation/documenting/documenting.asciidoc)

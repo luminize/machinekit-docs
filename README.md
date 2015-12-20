@@ -1,3 +1,3 @@
 # Machinekit Documentation
 
-Open index.asciidoc to start your browsing of the documentation
+Open [index.md](index.md) to start your browsing of the documentation

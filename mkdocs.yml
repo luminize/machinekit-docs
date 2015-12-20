@@ -1,0 +1,3 @@
+site_name: Machinekit Documentation
+docs_dir: './'
+site_dir: './build'
