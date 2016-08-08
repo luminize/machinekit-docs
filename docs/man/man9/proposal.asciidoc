@@ -1,0 +1,108 @@
+---
+---
+:skip-front-matter:
+
+= COMPONENT PROPOSAL
+:manmanual: HAL Components
+:mansource: ../man/man9/proposal.asciidoc
+:man version : 
+
+== NAME
+component name - some short yadayada description
+
+== SYNOPSIS
+
+[source,halcmd]
+.example on how to use with halcmd
+----
+loadrt component arg_1=value_1 arg_2=value_2 arg_n=value_n
+----
+
+[source,python]
+.example on how to use with python
+----
+from machinekit import hal
+from machinekit import rtapi as rt
+
+rt.loadrt('componentname', "arg_1=value_1 \
+                            arg_2=value_2 \
+                            arg_n=value_n")
+rt.newinst('componentname', 'name_of_a_new_instance')
+----
+
+.Component arguments
+[cols="2*", options="header"] 
+|===
+|Argument
+|Values
+
+|base_period_nsec
+|period
+
+|base_thread_fp
+|0 or 1
+|===
+
+.Component optional arguments
+[cols="2*", options="header"] 
+|===
+|Argument
+|Values
+
+|num_dio
+|1-64
+
+|num_aio
+|1-16
+|===
+
+== DESCRIPTION
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+== PINS
+
+pins have the following syntax:
+
+**axis.**__N__**.amp-enable-out** 
+
+where:
+
+- **axis** is the component type
+- __N__ is the identifier of the instance
+- the last **.amp-enable-out** is the name of the pin
+
+.Component type of 'proposal component'
+[cols="4*", options="header"] 
+|===
+|Pin name
+|Direction
+|Type
+|Description
+
+|amp-enable-out
+|OUT
+|BIT
+|TRUE if the amplifier for this joint should be enabled
+
+
+|amp-fault-in
+|IN
+|BIT
+|Should be driven TRUE if an external fault is detected with the amplifier
+for this joint
+|===
+
+
+== PARAMETERS
+
+These should slowly die out
+
+
+== FUNCTIONS
+I think you'll get the idea that after explanation there can be tables to
+show which functions are available and how to use them
